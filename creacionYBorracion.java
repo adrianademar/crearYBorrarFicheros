@@ -1,4 +1,4 @@
-package crearYBorrar;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
@@ -66,7 +66,7 @@ public class creacionYBorracion {
 			} else {
 				System.out.println("El fichero no existe :(");
 			}
-			System.out.println("¿Esta seguro de borrar los ficheros?");
+			System.out.println("Â¿Esta seguro de borrar los ficheros?");
 			System.out.println("Utilice el formato Y/N");
 			while(bucle) {
 				respuesta = sc.next().charAt(0);
@@ -75,7 +75,7 @@ public class creacionYBorracion {
 					if (f2.delete() && f3.delete() && d2.delete() && f1.delete() && d1.delete()) {
 						System.out.println("Los archivos se borraron");
 					} else {
-						System.out.println("Algo falló :(");
+						System.out.println("Algo fallÃ³ :(");
 					}
 				} else if ((respuesta == 'n') || (respuesta =='N')) {
 					bucle = false;
